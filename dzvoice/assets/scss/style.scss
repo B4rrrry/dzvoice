@@ -2,4 +2,14 @@
 .wrap {
   display: flex;
 }
+body {
+  background: #C0D6DC;
+  overflow-x: hidden;
+}
+@import './variables';
 // specifications
+// main 
+@import './components/header';
+@import './components/offer';
+@import './components/about-les';
+// main 
