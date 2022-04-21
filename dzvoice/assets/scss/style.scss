@@ -1,15 +1,36 @@
 // specifications
+@import "./variables";
 .wrap {
   display: flex;
 }
 body {
-  background: #C0D6DC;
+  background: #c0d6dc;
   overflow-x: hidden;
+  color: $mainColor;
 }
-@import './variables';
+.p-0 {
+  padding: 0;
+}
+.text-fill {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px;
+}
 // specifications
-// main 
-@import './components/header';
-@import './components/offer';
-@import './components/about-les';
-// main 
+// main
+@import "./components/header";
+@import "./components/offer";
+@import "./components/about-les";
+@import "./components/methods";
+@import "./components/_about";
+@import "./components/entry";
+@import "./components/_results";
+@import "./slider_all";
+@import "./components/results-slider";
+@import "./components//benefit";
+@import "./components/consult";
+
+// main
+
+// other
+@import "./components/custom-video";
+// other end

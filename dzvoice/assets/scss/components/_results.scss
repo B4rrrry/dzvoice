@@ -1,0 +1,20 @@
+@import "../variables";
+.results {
+  background-image: url('../img/main/results/bg.png');
+  background-repeat: no-repeat;
+  background-position: center 270px;
+  padding-top: 166px;
+  padding-bottom: 254px;
+  &__title {
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 210px;
+    span {
+      padding-left: 200px;
+    }
+  }
+}

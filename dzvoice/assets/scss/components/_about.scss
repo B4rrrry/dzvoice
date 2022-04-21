@@ -1,0 +1,110 @@
+@import "../variables";
+.about {
+  background-image: url('../img/main/about/bg.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 122px;
+  &__title {
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 96px;
+  }
+  &__subtitle {
+    width: 360px;
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 100px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #dc4a8c;
+      left: -20px;
+      top: 0;
+    }
+  }
+  &-list {
+    width: 560px;
+    height: fit-content;
+    font-family: $ptSans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    margin-right: 102px;
+    &__item {
+      padding-top: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 100%;
+        height: 2px;
+        background-color: #dc4a8c;
+      }
+    }
+  }
+  &__img {
+    width: 499px;
+    height: 645px;
+  }
+  &-wrap {
+    margin-bottom: 100px;
+  }
+  &__link {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color:$mainColor;
+    text-decoration: none !important;
+    transition: all 0.4s ease;
+    padding-top: 13px;
+    &-arrow {
+      margin-left: 30px;
+    }
+    svg path {
+      transition: all 0.4s ease;
+    }
+    &:hover {
+      color: #fff;
+      svg path {
+        stroke:#fff;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 380px;
+      height: 2px;
+      background-color: #dc4a8c;
+    }
+  }
+}
