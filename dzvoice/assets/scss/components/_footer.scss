@@ -1,0 +1,58 @@
+@import "../variables";
+.footer {
+  &-logo {
+    margin-right: auto;
+  }
+  &-wrap {
+    align-items: center;
+  }
+  &__text {
+    font-family: $ptSans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+  }
+  &-nav {
+    display: flex;
+    align-items: center;
+    font-family: $ptSans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #002939;
+    &__item {
+      margin-right: 14px;
+      &:nth-child(4) {
+        margin-right: 110px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      color: $mainColor;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+  &__author {
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 95.5%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: #002939;
+    margin-top: 50px;
+    span {
+      display: block;
+    }
+  }
+}

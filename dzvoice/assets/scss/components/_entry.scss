@@ -44,6 +44,18 @@
             rgba(220, 74, 140, 0.3) 75.81%
           ),
           rgba(247, 113, 37, 0.01);
+        .entry-list__icon {
+          &--star {
+            path {
+              stroke: #f77125;
+            }
+          }
+          &--clef {
+            path {
+              fill: #f77125;
+            }
+          }
+        }
       }
     }
     &__icon {
@@ -59,6 +71,15 @@
         position: absolute;
         top: -60px;
         border: 1px solid #ffffff;
+      }
+      path {
+        transition: all 0.4s ease;
+      }
+      &--star {
+        margin-left: -10px;
+      }
+      &--clef {
+        margin-left: 20px;
       }
     }
     &__title {

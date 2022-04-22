@@ -60,8 +60,10 @@
       font-size: 20px;
       line-height: 117%;
       letter-spacing: 0.04em;
-      transition: all 0.4s ease;
+      transition: all 1s ease;
+      opacity: 0;
       &--active {
+        opacity: 1;
         max-height: 1000px;
       }
     }

@@ -1,9 +1,22 @@
 @import "../variables";
 .about {
-  background-image: url('../img/main/about/bg.png');
+  background-image: url("../img/main/about/bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 122px;
+  &__img {
+    &-bg {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(52.62% 44.51% at 50% 50%, #F77125 0%, rgba(196, 196, 196, 0) 100%);
+      border-radius: 50%;
+      position: absolute;
+      left: -185px;
+      top: -41px;
+      z-index: -1;
+      filter: blur(60px);
+    }
+  }
   &__title {
     font-family: $grotesk;
     font-style: normal;
@@ -12,6 +25,10 @@
     line-height: 48px;
     letter-spacing: 0.04em;
     margin-bottom: 96px;
+    span {
+      display: block;
+      padding-left: 200px;
+    }
   }
   &__subtitle {
     width: 360px;
@@ -81,7 +98,7 @@
     line-height: 23px;
     text-align: right;
     letter-spacing: 0.04em;
-    color:$mainColor;
+    color: $mainColor;
     text-decoration: none !important;
     transition: all 0.4s ease;
     padding-top: 13px;
@@ -94,7 +111,7 @@
     &:hover {
       color: #fff;
       svg path {
-        stroke:#fff;
+        stroke: #fff;
       }
     }
     &::before {
