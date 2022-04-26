@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center 270px;
   padding-top: 166px;
-  padding-bottom: 254px;
+  padding-bottom: 250px;
   &__title {
     font-family: $grotesk;
     font-style: normal;
@@ -15,6 +15,230 @@
     margin-bottom: 210px;
     span {
       padding-left: 200px;
+    }
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .results {
+    background-image: url('../img/main/results/bg.png');
+    background-repeat: no-repeat;
+    background-position: center 270px;
+    padding-top: 166px;
+    padding-bottom: 254px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 95.5%;
+      letter-spacing: 0.04em;
+      margin-bottom: 209px;
+      span {
+        padding-left: 160px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 991px) {
+  .container {
+    max-width: 640px;
+    padding: 0 10px;
+  }
+  .results {
+    background-image: url('../img/main/results/bg_480.png');
+    background-repeat: no-repeat;
+    background-position: left 230px;
+    padding-top: 166px;
+    padding-bottom: 150px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 150px;
+      span {
+        padding-left: 160px;
+        -webkit-text-stroke:2px;
+        
+      }
+    }
+    .custom-video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 495px;
+      height: 273px;
+      border-radius: 0px 50px;
+      &__preview {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &__btn {
+        width: 98px;
+        height: 98px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, #f77125 0%, #dc4a8c 100%);
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border: 0;
+        &-play {
+          width: 49px;
+          height: 49px;
+          padding-left: 10px;
+        }
+      }
+      &__video {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 50px;
+        border: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .container {
+    max-width: 480px;
+    padding: 0 10px;
+  }
+  .results {
+    background-image: url('../img/main/results/bg_480_m.png');
+    background-repeat: no-repeat;
+    background-position: left 50px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 90px;
+      span {
+
+        display: none;
+      }
+    }
+    .custom-video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 378px;
+      height: 209px;
+      border-radius: 0px 50px;
+      &__preview {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &__btn {
+        width: 98px;
+        height: 98px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, #f77125 0%, #dc4a8c 100%);
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border: 0;
+        &-play {
+          width: 49px;
+          height: 49px;
+          padding-left: 10px;
+        }
+      }
+      &__video {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 50px;
+        border: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .container {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+  .results {
+    background-image: url('../img/main/results/bg_480_m.png');
+    background-repeat: no-repeat;
+    background-position: left 70px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-size: 300px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 90px;
+      span {
+
+        display: none;
+      }
+    }
+    .custom-video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 378px;
+      height: 209px;
+      border-radius: 0px 50px;
+      &__preview {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &__btn {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, #f77125 0%, #dc4a8c 100%);
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border: 0;
+        &-play {
+          width: 30px;
+          height: 30px;
+          padding-left: 5px;
+        }
+      }
+      &__video {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 50px;
+        border: 0;
+      }
     }
   }
 }
