@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => { customVideo(); }, 500)
   customTabs();
   consultAction();
+  headerBurger();
 })
 function customVideo() {
   const btns = document.querySelectorAll('.custom-video__btn'),
@@ -57,4 +58,20 @@ function consultAction() {
         secondsHTML.textContent = seconds;
     }
   }, 10)
+}
+function headerBurger() {
+  const burgerBtn = document.querySelector('.header-burger__btn'),
+        burgerClose = document.querySelector('.header-burger__close'),
+        burgerWrap = document.querySelector('.header-burger__wrap');
+  
+  burgerBtn.addEventListener('click', () => {
+    burgerWrap.classList.toggle('header-burger__wrap--active');
+    burgerBtn.style.opacity = '0';
+    document.body.style.overflowY = 'hidden'
+  })
+  burgerClose.addEventListener('click', () => {
+    burgerWrap.classList.toggle('header-burger__wrap--active');
+    burgerBtn.style.opacity = '1';
+    document.body.style.overflowY = 'unset'
+  })
 }

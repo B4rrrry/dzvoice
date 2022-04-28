@@ -1,0 +1,80 @@
+@import "../variables";
+.dolly {
+  padding-top: 25px;
+  padding-bottom: 108px;
+  &__bg {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: -130px;
+    top: 244px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #f77125 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+    border-radius: 50%;
+  }
+  &__img {
+    width: 362px;
+    height: 550px;
+    &-wrap {
+      position: relative;
+      z-index: -1111;
+      margin-right: 43px;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+            90.56deg,
+            #c0d6dc -19.58%,
+            rgba(192, 214, 220, 0.92) -12.16%,
+            rgba(192, 214, 220, 0) 26.86%,
+            rgba(192, 214, 220, 0) 69.21%,
+            rgba(192, 214, 220, 0.49) 81%,
+            #c0d6dc 96.01%
+          ),
+          linear-gradient(
+            179.97deg,
+            #c0d6dc 4.87%,
+            rgba(192, 214, 220, 0.38) 14.46%,
+            rgba(192, 214, 220, 0) 51.02%,
+            rgba(192, 214, 220, 0.31) 82.85%,
+            #c0d6dc 96.07%
+          );
+      }
+    }
+  }
+  &__title {
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    margin-top: 170px;
+    margin-bottom: 103px;
+    span {
+      padding-left: 80px;
+      display: block;
+    }
+  }
+  &__btn {
+    &-wrap {
+      width: 420px;
+      display: flex;
+      justify-content: flex-end;
+      margin-left: auto;
+      &::before {
+        right: -20px;
+      }
+    }
+  }
+  .socials {
+    margin-top: 32px;
+  }
+}
