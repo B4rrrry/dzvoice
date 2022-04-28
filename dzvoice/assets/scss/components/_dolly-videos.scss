@@ -1,0 +1,447 @@
+@import "../variables";
+.dolly-videos {
+  background-image: url('../img/dolly/videos/bg.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  padding-top: 250px;
+  padding-bottom: 290px;
+  &__title {
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 200px;
+    span {
+      padding-left: 100px;
+    }
+  }
+  /* Ограничивающая оболочка */
+  .slick-list {
+    overflow: hidden;
+  }
+  /* Лента слайдов */
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  /* Стрелка */
+  .slick-arrow {
+    top: -90px;
+    right: 70px;
+  }
+  /* Стрелка влево */
+  .slick-arrow.slick-prev {
+    width: 100px;
+    height: 59px;
+    background-image: url("../img/main/results/prev.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-size: 0;
+    border: 0;
+    margin-right: 110px;
+  }
+  /* Стрелка вправо */
+  .slick-arrow.slick-next {
+    width: 100px;
+    height: 59px;
+    background-image: url("../img/main/results/next.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-size: 0;
+    border: 0;
+  }
+  .dolly-videos__slider {
+    &-title {
+      width: 660px;
+      font-family: $ptSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 101.5%;
+      letter-spacing: 0.04em;
+      margin: 0 auto  ;
+    }
+    .slider__item {
+      width: 860px !important;
+      height: fit-content;
+      margin-right: 140px;
+      border-radius: 0px 50px;
+    }
+    .custom-video {
+      margin-bottom: 15px;
+      height: 475px;
+    }
+    .custom-video__btn {
+      width: 145px;
+      height: 145px;
+      &-play {
+        width: 73px;
+        height: 73px;
+        padding-left: 15 px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .dolly-videos {
+    background-image: url('../img/dolly/videos/bg.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 95.5%;
+      letter-spacing: 0.04em;
+      margin-bottom: 175px;
+      span {
+        padding-left: 160px;
+      }
+    }
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+    }
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+    /* Стрелка */
+    .slick-arrow {
+      top: -90px;
+      right: 70px;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      width: 100px;
+      height: 59px;
+      background-image: url("../img/main/results/prev.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+      margin-right: 110px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      width: 100px;
+      height: 59px;
+      background-image: url("../img/main/results/next.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+    }
+    .dolly-videos__slider {
+      &-title {
+        width: 660px;
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 101.5%;
+        letter-spacing: 0.04em;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .slider__item {
+        width: 715px !important;
+        height: fit-content;
+        margin-right: 64px;
+        border-radius: 0px 50px;
+      }
+      .custom-video {
+        margin-bottom: 15px;
+        width: 715px;
+        height: 395px;
+      }
+      .custom-video__btn {
+        width: 121px;
+        height: 121px;
+        &-play {
+          width: 65px;
+          height: 65px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 991px) {
+  .dolly-videos {
+    background-image: url('../img/dolly/videos/bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 130px;
+      span {
+        padding-left: 0px;
+      }
+    }
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+    }
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+    /* Стрелка */
+    .slick-arrow {
+      top: -60px;
+      right: 70px;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      width: 60px;
+      height: 40px;
+      background-image: url("../img/main/results/prev.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+      margin-right: 70px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      width: 60px;
+      height: 40px;
+      background-image: url("../img/main/results/next.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+    }
+    .dolly-videos__slider {
+      &-title {
+        width: 350px;
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .slider__item {
+        width: 456px !important;
+        height: fit-content;
+        margin-right: 80px;
+        border-radius: 0px 50px;
+      }
+      .custom-video {
+        margin-bottom: 15px;
+        width: 456px;
+        height: 252px;
+      }
+      .custom-video__btn {
+        width: 89px;
+        height: 89px;
+        &-play {
+          width: 45px;
+          height: 45px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .dolly-videos {
+    background-image: url('../img/dolly/videos/bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 100px;
+      span {
+        padding-left: 0px;
+      }
+    }
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+    }
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+    /* Стрелка */
+    .slick-arrow {
+      top: -60px;
+      right: 70px;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      width: 60px;
+      height: 40px;
+      background-image: url("../img/main/results/prev.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+      margin-right: 70px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      width: 60px;
+      height: 40px;
+      background-image: url("../img/main/results/next.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+    }
+    .dolly-videos__slider {
+      &-title {
+        width: 300px;
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .slider__item {
+        width: 378px !important;
+        height: fit-content;
+        margin-right: 20px;
+        border-radius: 0px 50px;
+      }
+      .custom-video {
+        margin-bottom: 15px;
+        width: 378px;
+        height: 209px;
+      }
+      .custom-video__btn {
+        width: 64px;
+        height: 64px;
+        &-play {
+          width: 35px;
+          height: 35px;
+          padding-left: 5 px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .dolly-videos {
+    background-image: url('../img/dolly/videos/bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 100px;
+      span {
+        padding-left: 0px;
+      }
+    }
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+    }
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+    /* Стрелка */
+    .slick-arrow {
+      top: -60px;
+      right: 70px;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      width: 60px;
+      height: 40px;
+      background-image: url("../img/main/results/prev.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+      margin-right: 70px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      width: 60px;
+      height: 40px;
+      background-image: url("../img/main/results/next.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+    }
+    .dolly-videos__slider {
+      &-title {
+        width: 230px;
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .slider__item {
+        width: 296px !important;
+        height: fit-content;
+        margin-right: 20px;
+        border-radius: 0px 50px;
+      }
+      .custom-video {
+        margin-bottom: 15px;
+        width: 296px;
+        height: 163px;
+      }
+      .custom-video__btn {
+        width: 64px;
+        height: 64px;
+        &-play {
+          width: 35px;
+          height: 35px;
+          padding-left: 5 px;
+        }
+      }
+    }
+  }
+}

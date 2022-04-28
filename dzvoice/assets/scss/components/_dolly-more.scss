@@ -1,4 +1,973 @@
 @import "../variables";
-.dolly-more{
+.dolly-more {
+  background-image: url(../img/dolly/more/bg.png);
+  background-repeat: no-repeat;
+  background-position: 600px 400px;
+  padding-bottom: 100px;
+  .container {
+    border-bottom: 1px solid #f77125;
+  }
+  &__title {
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 110px;
+    span {
+      padding-left: 200px;
+      display: block;
+    }
+  }
+  &__list {
+    width: 685px;
+    margin-right: 40px;
+    margin-bottom: 250px;
+    &-item {
+      position: relative;
+      margin-bottom: 30px;
+      padding-top: 10px;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        background-color: #dc4a8c;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+    }
+    &-text {
+      font-family: $ptSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__img {
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    &-wrap {
+      position: relative;
+      height: fit-content;
+      border-radius: 50%;
+      top: -100px;
+      &::before {
+        content: "";
+        width: 101%;
+        height: 101%;
+        position: absolute;
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(192, 214, 220, 0) 0%,
+          #c0d6dc 100%
+        );
+        border-radius: 50%;
+        top: -2px;
+        left: 0;
+      }
+    }
+  }
+  &__diploms {
+    &-title {
+      width: 180px;
+      padding-top: 10px;
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 23px;
+      letter-spacing: 0.04em;
+      position: relative;
+      text-align: center;
+      margin-bottom: 40px;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: #dc4a8c;
+        top: 0;
+        left: 0px;
+      }
+    }
+  }
+  /* Ограничивающая оболочка */
+  .slick-list {
+    overflow: hidden;
+    height: 510px !important  ;
+  }
+  /* Лента слайдов */
+  .slick-track {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  /* Стрелка */
+  .slick-arrow {
+    top: -10px;
+    right: 0px;
+  }
+  /* Стрелка влево */
+  .slick-arrow.slick-prev {
+    width: 100px;
+    height: 59px;
+    background-image: url("../img/main/results/prev.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-size: 0;
+    border: 0;
+    margin-right: 110px;
+  }
+  /* Стрелка вправо */
+  .slick-arrow.slick-next {
+    width: 100px;
+    height: 59px;
+    background-image: url("../img/main/results/next.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-size: 0;
+    border: 0;
+  }
+  .dolly-more__slider {
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.4s ease;
+    }
+    .slider__item {
+      width: fit-content !important;
+      height: fit-content;
+      margin-right: 40px;
+      position: relative;
+      transition: all 0.4s ease;
+      position: relative;
+      z-index: 10;
+      &:hover {
+        z-index: 100;
+        &::before {
+          opacity: 0;
+        }
+        img {
+          transform: scale(1.4);
+        }
+      }
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          91.86deg,
+          rgba(220, 74, 140, 0.7) 0.68%,
+          rgba(247, 113, 37, 0.7) 91.47%
+        );
+      }
+    }
+  }
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .dolly-more {
+    background-image: url(../img/dolly/more/bg.png);
+    background-repeat: no-repeat;
+    background-position: 600px 400px;
+    padding-bottom: 100px;
+    .container {
+      border-bottom: 1px solid #f77125;
+    }
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 95.5%;
+      letter-spacing: 0.04em;
+      margin-bottom: 112px;
+      span {
+        -webkit-text-stroke: 2px;
+        padding-left: 160px;
+        display: block;
+      }
+    }
+    &__list {
+      width: 460px;
+      margin-right: 20px;
+      margin-bottom: 205px;
+      &-item {
+        position: relative;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          top: 0;
+          background-color: #dc4a8c;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &-title {
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.04em;
+        margin-bottom: 5px;
+      }
+      &-text {
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+      }
+    }
+    &__img {
+      width: 460px;
+      height: 460px;
+      border-radius: 50%;
+      position: relative;
+      z-index: -1;
+      &-wrap {
+        position: relative;
+        height: fit-content;
+        border-radius: 50%;
+        top: 0px;
+        &::before {
+          content: "";
+          width: 101%;
+          height: 101%;
+          position: absolute;
+          background: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(192, 214, 220, 0) 0%,
+            #c0d6dc 100%
+          );
+          border-radius: 50%;
+          top: -2px;
+          left: 0;
+        }
+      }
+    }
+    &__diploms {
+      &-title {
+        width: 180px;
+        padding-top: 10px;
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        position: relative;
+        text-align: center;
+        margin-bottom: 100px;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          background-color: #dc4a8c;
+          top: 0;
+          left: 0px;
+        }
+      }
+    }
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+      height: 510px !important  ;
+    }
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    /* Стрелка */
+    .slick-arrow {
+      top: 0px;
+      right: 50px;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      width: 75px;
+      height: 59px;
+      background-image: url("../img/main/results/prev.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+      margin-right: 90px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      width: 75px;
+      height: 59px;
+      background-image: url("../img/main/results/next.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+    }
+    .dolly-more__slider {
+      &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.4s ease;
+      }
+      .slider__item {
+        width: 217px !important;
+        height: 310px;
+        margin-right: 40px;
+        position: relative;
+        transition: all 0.4s ease;
+        position: relative;
+        z-index: 10;
+        &:hover {
+          z-index: 100;
+          &::before {
+            opacity: 0;
+          }
+          img {
+            transform: scale(1.4);
+          }
+        }
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: linear-gradient(
+            91.86deg,
+            rgba(220, 74, 140, 0.7) 0.68%,
+            rgba(247, 113, 37, 0.7) 91.47%
+          );
+        }
+      }
+    }
   
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 991px) {
+  .dolly-more {
+    background-image: url(../img/dolly/more/bg_640.png);
+    background-repeat: no-repeat;
+    background-position: center 500px;
+    padding-bottom: 0px;
+    .container {
+      border-bottom: 0px solid #f77125;
+      padding-bottom: 50px;
+    }
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 115px;
+      span {
+        -webkit-text-stroke: 2px;
+        padding-left: 160px;
+        display: inline;
+      }
+    }
+    &__list {
+      width: 300px;
+      margin-right: 0px;
+      margin-bottom: 50px;
+      &-item {
+        position: relative;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          top: 0;
+          background-color: #dc4a8c;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &-title {
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        margin-bottom: 10px;
+      }
+      &-text {
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+      }
+    }
+    &__img {
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      position: relative;
+      z-index: -1;
+      &-wrap {
+        position: absolute;
+        right: 0;
+        z-index: -01;
+        height: fit-content;
+        border-radius: 50%;
+        top: -100px;
+        &::before {
+          content: "";
+          width: 101%;
+          height: 101%;
+          position: absolute;
+          background: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(192, 214, 220, 0) 0%,
+            #c0d6dc 100%
+          );
+          border-radius: 50%;
+          top: -2px;
+          left: 0;
+        }
+      }
+    }
+    &__diploms {
+      &-title {
+        width: 180px;
+        padding-top: 10px;
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        position: relative;
+        text-align: center;
+        margin-bottom: 100px;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          background-color: #dc4a8c;
+          top: 0;
+          left: 0px;
+        }
+      }
+    }
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+      height: 310px !important  ;
+    }
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    /* Стрелка */
+    .slick-arrow {
+      top: -60px;
+      right: 20px;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      width:50px;
+      height: 59px;
+      background-image: url("../img/main/results/prev.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+      margin-right: 90px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      width:50px;
+      height: 59px;
+      background-image: url("../img/main/results/next.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+    }
+    .dolly-more__slider {
+      &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.4s ease;
+      }
+      .slider__item {
+        width: 250px !important;
+        height: 310px;
+        margin-right: 20px;
+        position: relative;
+        transition: all 0.4s ease;
+        position: relative;
+        z-index: 10;
+        &:hover {
+          z-index: 100;
+          &::before {
+            opacity: 0;
+          }
+          img {
+            transform: scale(1);
+          }
+        }
+        &::before {
+          content: "";
+          display: none;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: linear-gradient(
+            91.86deg,
+            rgba(220, 74, 140, 0.7) 0.68%,
+            rgba(247, 113, 37, 0.7) 91.47%
+          );
+        }
+      }
+    }
+  
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .dolly-more {
+    background-image: url(../img/dolly/more/bg_640.png);
+    background-repeat: no-repeat;
+    background-position: center 500px;
+    padding-bottom: 0px;
+    .container {
+      border-bottom: 0px solid #f77125;
+      padding-bottom: 50px;
+    }
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 115px;
+      span {
+        -webkit-text-stroke: 2px;
+        padding-left: 0px;
+        display: inline;
+      }
+    }
+    &__list {
+      width: 100%;
+      margin: 0 auto 100px;
+      &-item {
+        position: relative;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          top: 0;
+          background-color: #dc4a8c;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &-title {
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        margin-bottom: 10px;
+      }
+      &-text {
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+      }
+    }
+    &__img {
+      width: 289px;
+      height: 289px;
+      border-radius: 50%;
+      position: relative;
+      z-index: -1;
+      &-wrap {
+        width: 289px;
+        height: 289px;
+        position: absolute;
+        right: 0;
+        z-index: -01;
+        height: fit-content;
+        border-radius: 50%;
+        top: -100px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        &::before {
+          content: "";
+          width: 101%;
+          height: 101%;
+          position: absolute;
+          background: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(192, 214, 220, 0) 0%,
+            #c0d6dc 100%
+          );
+          border-radius: 50%;
+          top: -2px;
+          left: 0;
+        }
+      }
+    }
+    &__diploms {
+      &-title {
+        width: 180px;
+        padding-top: 10px;
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        position: relative;
+        text-align: center;
+        margin-bottom: 100px;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          background-color: #dc4a8c;
+          top: 0;
+          left: 0px;
+        }
+      }
+    }
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+      height: 310px !important  ;
+    }
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    /* Стрелка */
+    .slick-arrow {
+      top: -60px;
+      right: 20px;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      width:50px;
+      height: 59px;
+      background-image: url("../img/main/results/prev.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+      margin-right: 90px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      width:50px;
+      height: 59px;
+      background-image: url("../img/main/results/next.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+    }
+    .dolly-more__slider {
+      &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.4s ease;
+      }
+      .slider__item {
+        width: 250px !important;
+        height: 310px;
+        margin-right: 20px;
+        position: relative;
+        transition: all 0.4s ease;
+        position: relative;
+        z-index: 10;
+        &:hover {
+          z-index: 100;
+          &::before {
+            opacity: 0;
+          }
+          img {
+            transform: scale(1);
+          }
+        }
+        &::before {
+          content: "";
+          display: none;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: linear-gradient(
+            91.86deg,
+            rgba(220, 74, 140, 0.7) 0.68%,
+            rgba(247, 113, 37, 0.7) 91.47%
+          );
+        }
+      }
+    }
+  
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .dolly-more {
+    background-image: url(../img/dolly/more/bg_640.png);
+    background-repeat: no-repeat;
+    background-position: center 500px;
+    padding-bottom: 0px;
+    .container {
+      border-bottom: 0px solid #f77125;
+      padding-bottom: 50px;
+    }
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 115px;
+      span {
+        -webkit-text-stroke: 2px;
+        padding-left: 0px;
+        display: inline;
+      }
+    }
+    &__list {
+      width: 100%;
+      margin: 0 auto 100px;
+      &-item {
+        position: relative;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          top: 0;
+          background-color: #dc4a8c;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &-title {
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        margin-bottom: 10px;
+      }
+      &-text {
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+      }
+    }
+    &__img {
+      width: 289px;
+      height: 289px;
+      border-radius: 50%;
+      position: relative;
+      z-index: -1;
+      &-wrap {
+        width: 289px;
+        height: 289px;
+        position: absolute;
+        right: 0;
+        z-index: -01;
+        height: fit-content;
+        border-radius: 50%;
+        top: -100px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        &::before {
+          content: "";
+          width: 101%;
+          height: 101%;
+          position: absolute;
+          background: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(192, 214, 220, 0) 0%,
+            #c0d6dc 100%
+          );
+          border-radius: 50%;
+          top: -2px;
+          left: 0;
+        }
+      }
+    }
+    &__diploms {
+      &-title {
+        width: 180px;
+        padding-top: 10px;
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        position: relative;
+        text-align: center;
+        margin-bottom: 100px;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          background-color: #dc4a8c;
+          top: 0;
+          left: 0px;
+        }
+      }
+    }
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+      height: 310px !important  ;
+    }
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    /* Стрелка */
+    .slick-arrow {
+      top: -60px;
+      right: 20px;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      width:50px;
+      height: 59px;
+      background-image: url("../img/main/results/prev.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+      margin-right: 90px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      width:50px;
+      height: 59px;
+      background-image: url("../img/main/results/next.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+    }
+    .dolly-more__slider {
+      &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.4s ease;
+      }
+      .slider__item {
+        width: 250px !important;
+        height: 310px;
+        margin-right: 20px;
+        position: relative;
+        transition: all 0.4s ease;
+        position: relative;
+        z-index: 10;
+        &:hover {
+          z-index: 100;
+          &::before {
+            opacity: 0;
+          }
+          img {
+            transform: scale(1);
+          }
+        }
+        &::before {
+          content: "";
+          display: none;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: linear-gradient(
+            91.86deg,
+            rgba(220, 74, 140, 0.7) 0.68%,
+            rgba(247, 113, 37, 0.7) 91.47%
+          );
+        }
+      }
+    }
+  
+  }
 }
