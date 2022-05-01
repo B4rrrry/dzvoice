@@ -1,0 +1,314 @@
+@import "../variables";
+.course-offer {
+  padding-top: 204px;
+  position: relative;
+  &__title {
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 110px;
+  }
+  &__bg {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -100;
+  }
+  &__btn {
+    &-wrap {
+      height: fit-content;
+      &--req {
+        &::before {
+          bottom: 0;
+          top: unset !important;
+        }
+      }
+      &--rev {
+        margin-top: 51px;
+        margin-left: auto;
+      }
+    }
+    &-link {
+      &--req {
+        flex-direction: row-reverse;
+        padding-top: 0;
+        padding-bottom: 20px;
+        svg {
+          margin-left: 0;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  .socials {
+    margin-top: 120px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .course-offer {
+    padding-top: 204px;
+    position: relative;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 95.5%;
+      letter-spacing: 0.04em;
+      text-align: center;
+      margin-bottom: 120px;
+    }
+    &__bg {
+      width: 960px;
+      height: 733px;
+      position: absolute;
+      top: -40px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: -100;
+    }
+    &__btn {
+      &-wrap {
+        height: fit-content;
+        &--req {
+          &::before {
+            bottom: 0;
+            top: unset !important;
+          }
+        }
+        &--rev {
+          margin-top: 51px;
+          margin-left: auto;
+        }
+      }
+      &-link {
+        &--req {
+          flex-direction: row-reverse;
+          padding-top: 0;
+          padding-bottom: 20px;
+          svg {
+            margin-left: 0;
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+    .socials {
+      margin-top: 120px;
+    }
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 991px) {
+  .course-offer {
+    padding-top: 190px;
+    padding-bottom: 170px;
+    position: relative;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      text-align: center;
+      margin-bottom: 140px;
+    }
+    &__bg {
+      width: 100%;
+      height: 630px;
+      position: absolute;
+      top: -40px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: -100;
+      object-fit: cover;
+    }
+    &__btn {
+      &-wrap {
+        height: fit-content;
+        &--req {
+          &::before {
+            bottom: 0;
+            top: unset !important;
+          }
+          order: 2;
+        }
+        &--rev {
+          margin-top: 51px;
+          margin-left: unset;
+          margin-right: auto;
+          order: 1;
+        }
+      }
+      &-link {
+        &--req {
+          flex-direction: row-reverse;
+          padding-top: 0 !important;
+          padding-bottom: 20px;
+          svg {
+            margin-left: 0;
+            margin-right: 30px;
+          }
+        }
+        &--rev {
+          text-align: left !important;
+          svg {
+            transform: rotate(270deg);
+          }
+        }
+      }
+    }
+    .socials {
+      margin-top: 120px;
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .course-offer {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    position: relative;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      text-align: center;
+      margin-bottom: 140px;
+    }
+    &__bg {
+      width: 100%;
+      height: 614px;
+      position: absolute;
+      top: -40px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: -100;
+      object-fit: cover;
+    }
+    &__btn {
+      &-wrap {
+        height: fit-content;
+        &--req {
+          margin-top: -50px;
+          &::before {
+            bottom: 0;
+            top: unset !important;
+          }
+          order: 2;
+        }
+        &--rev {
+          margin-top: 51px;
+          margin-left: unset;
+          margin-right: auto;
+          order: 1;
+        }
+      }
+      &-link {
+        &--req {
+          flex-direction: row-reverse;
+          padding-top: 0 !important;
+          padding-bottom: 20px;
+          svg {
+            margin-left: 0;
+            margin-right: 30px;
+          }
+        }
+        &--rev {
+          text-align: left !important;
+          svg {
+            transform: rotate(270deg);
+          }
+        }
+      }
+    }
+    .socials {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .course-offer {
+    padding-top: 130px;
+    padding-bottom: 100px;
+    position: relative;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      text-align: left;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    &__bg {
+      width: 100%;
+      height: 614px;
+      position: absolute;
+      top: -40px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: -100;
+      object-fit: cover;
+    }
+    &__wrap {
+      flex-direction: column;
+    }
+    &__btn {
+      &-wrap {
+        height: fit-content;
+        &--req {
+          margin-top: -50px;
+          position: absolute !important;
+          right: 10px;
+          top: -30px;
+          &::before {
+            bottom: 0;
+            top: unset !important;
+          }
+          order: 2;
+        }
+        &--rev {
+          margin-top: 30px;
+          margin-left: unset;
+          margin-right: auto;
+          order: 1;
+        }
+      }
+      &-link {
+        &--req {
+          flex-direction: row-reverse;
+          padding-top: 0 !important;
+          padding-bottom: 20px;
+          svg {
+            margin-left: 0;
+            margin-right: 30px;
+          }
+        }
+        &--rev {
+          text-align: left !important;
+          svg {
+            transform: rotate(270deg);
+          }
+        }
+      }
+    }
+    .socials {
+      display: none;
+    }
+  }
+}

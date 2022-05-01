@@ -1,0 +1,281 @@
+@import "../variables";
+.reviews {
+  padding-top: 252px;
+  padding-bottom: 250px;
+  background-image: url("../img/course/reviews/bg.png");
+  background-repeat: no-repeat;
+  background-position: center 350px;
+  background-size: 700px;
+  &__title {
+    font-family: $grotesk;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 110px;
+    span {
+      padding-left: 200px;
+    }
+  }
+  &__slider {
+    &-name {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 23px;
+      letter-spacing: 0.04em;
+      position: relative;
+      padding-top: 10px;
+      margin-bottom: 94px;
+      &::before {
+        content: "";
+        width: 380px;
+        height: 2px;
+        background-color: #dc4a8c;
+        position: absolute;
+        top: 0;
+        left: -20px;
+      }
+    }
+    &-desc {
+      width: 500px;
+      font-family: $ptSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 117%;
+      letter-spacing: 0.04em;
+      margin-right: 40px;
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .reviews {
+    padding-top: 252px;
+    padding-bottom: 250px;
+    background-image: url("../img/course/reviews/bg.png");
+    background-repeat: no-repeat;
+    background-position: right 350px;
+    background-size: 700px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 95.5%;
+      letter-spacing: 0.04em;
+      margin-bottom: 200px;
+      span {
+        padding-left: 160px;
+      }
+    }
+    &__slider {
+      &-name {
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        position: relative;
+        padding-top: 10px;
+        margin-bottom: 50px;
+        &::before {
+          content: "";
+          width: 380px;
+          height: 2px;
+          background-color: #dc4a8c;
+          position: absolute;
+          top: 0;
+          left: -20px;
+        }
+      }
+      &-desc {
+        width: 560px;
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        margin-right: 0px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 991px) {
+  .reviews {
+    padding-top: 252px;
+    padding-bottom: 150px;
+    background-image: url("../img/course/reviews/bg.png");
+    background-repeat: no-repeat;
+    background-position: right 350px;
+    background-size: 700px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 180px;
+      span {
+        padding-left: 160px;
+        -webkit-text-stroke: 2px;
+        display: block;
+      }
+    }
+    &__slider {
+      &-name {
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        position: relative;
+        padding-top: 10px;
+        margin-bottom: 50px;
+        &::before {
+          content: "";
+          width: 458px;
+          height: 2px;
+          background-color: #dc4a8c;
+          position: absolute;
+          top: 0;
+          left: -20px;
+        }
+      }
+      &-desc {
+        width: 456px;
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        margin-right: 0px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .reviews {
+    padding-top: 252px;
+    padding-bottom: 150px;
+    background-image: url("../img/course/reviews/bg.png");
+    background-repeat: no-repeat;
+    background-position: center 350px;
+    background-size: 700px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 100px;
+      span {
+        padding-left: 0px;
+        -webkit-text-stroke: 2px;
+        text-align: center;
+        display: block;
+      }
+    }
+    &__slider {
+      &-name {
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 19px;
+        letter-spacing: 0.04em;
+        position: relative;
+        padding-top: 10px;
+        margin-bottom: 25px;
+        &::before {
+          content: "";
+          width: 380px;
+          height: 2px;
+          background-color: #dc4a8c;
+          position: absolute;
+          top: 0;
+          left: -20px;
+        }
+      }
+      &-desc {
+        width: 381px;
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../img/course/reviews/bg.png");
+    background-repeat: no-repeat;
+    background-position: center 350px;
+    background-size: 700px;
+    &__title {
+      font-family: $grotesk;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      margin-bottom: 100px;
+      span {
+        padding-left: 0px;
+        -webkit-text-stroke: 2px;
+        text-align: center;
+        display: block;
+      }
+    }
+    &__slider {
+      &-name {
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 19px;
+        letter-spacing: 0.04em;
+        position: relative;
+        padding-top: 10px;
+        margin-bottom: 25px;
+        &::before {
+          content: "";
+          width: 380px;
+          height: 2px;
+          background-color: #dc4a8c;
+          position: absolute;
+          top: 0;
+          left: -20px;
+        }
+      }
+      &-desc {
+        width: 381px;
+        font-family: $ptSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

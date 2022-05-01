@@ -134,6 +134,33 @@
         color: $mainColor;
       }
     }
+    &__price {
+      margin-bottom: 50px;
+      &-item {
+        margin-bottom: 8px;
+        &--old {
+          position: relative;
+          &::before {
+            content: "";
+            width: 180px;
+            height: 2px;
+            position: absolute;
+            background-color: #dc4a8c;
+            transform: rotate(-12deg);
+            top: 18px;
+          }
+        }
+      }
+      &-value {
+        font-family: $grotesk;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.04em;
+      }
+    }
   }
 }
 @media screen and (max-width: 1199px) and (min-width: 992px) {
